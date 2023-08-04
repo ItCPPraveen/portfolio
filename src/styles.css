@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: spartan;
+    src: url(../LeagueSpartan-VariableFont_wght.ttf);
+}
+body{
+    background-color: black;
+}
