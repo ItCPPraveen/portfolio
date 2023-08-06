@@ -1,17 +1,30 @@
 <div class="header">
-    <h1 class="name">Praveen</h1>
+    <h1 class="name"><a href=" ">Praveen</a></h1>
     <div class="headercon"> 
         <div class="aboutme">
-            <button>Aboutme</button>
+            <ul class="aboutme1">
+              <li style="--bg-color: #2b2a2a;">
+                <span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <span class="text1">
+                  <a routerLink="aboutme">About me</a></span>
+              </li>
+            </ul>
         </div>
         <div class="pic">
             <img src=".././assets/praveen.png" alt="Praveen">
         </div>
         <div class="resume">
-            <button>Resume</button>
+          <ul>
+            <li style="--bg-color: #2b2a2a;">
+              <span class="icon">
+                <i class="fas fa-file"></i>
+              </span>
+              <span class="text">Resume</span>
+            </li>
+          </ul>
         </div>
     </div>
-</div>
-<div>
-    <div>overview</div>
-</div>
+  </div>
+  
+  <router-outlet></router-outlet>
+  

@@ -1,0 +1,35 @@
+.overview{
+    position: relative;
+    
+    background-repeat: no-repeat;
+}
+.home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 150px;
+    opacity: 20%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overview div{
+    display: grid;
+    place-items: center;
+        width: 100%;
+
+}
+.overview h1{
+    font-size: 140px;
+    
+}
+.overview h1 p{
+    font-size: 40px;
+    margin-top: 0px;
+}
+.home img{
+    width: 900px;
+    height: 600px;
+    mix-blend-mode: color-burn;
+}
