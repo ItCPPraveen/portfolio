@@ -2,6 +2,15 @@
     <h1 class="name"><a href=" ">Praveen</a></h1>
     <div class="headercon"> 
         <div class="aboutme">
+          <ul class="aboutme1">
+            <li style="--bg-color: #2b2a2a;">
+              <span class="icon1"><i class="fa fa-book" aria-hidden="true"></i></span>
+              <span class="text1">
+                <a routerLink="projects">Projects</a></span>
+           </li>
+          </ul>
+        </div>
+        <div class="aboutme">
             <ul class="aboutme1">
               <li style="--bg-color: #2b2a2a;">
                 <span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
@@ -19,12 +28,40 @@
               <span class="icon">
                 <i class="fas fa-file"></i>
               </span>
-              <span class="text">Resume</span>
+              <span class="text"><a target="_blank" href="../assets/praveenResume.pdf">Resume</a></span>
             </li>
           </ul>
         </div>
-    </div>
+        <div class="contact">
+          <ul>
+            <li style="--bg-color: #2b2a2a;">
+              <span class="icon">
+                <i class="fas fa-phone"></i>
+              </span>
+              <span class="text">Contact</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact" style="display: flex;justify-content: center;padding: 10px;">
+        <ul>
+          <li style="--bg-color: #2b2a2a;">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="text"><a routerLink="" style="position: relative;">Home</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="contact1">
+        <ul>
+          <li class="insta"><a href="https://www.linkedin.com/in/cp-praveen-84218b190"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/ItCPPraveen"><i class="fa fa-github"></i></a></li>
+          <li><a href="mailto:cppraveen02@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </div>
   </div>
   
   <router-outlet></router-outlet>
+  
   

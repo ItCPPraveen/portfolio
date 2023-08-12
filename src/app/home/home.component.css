@@ -7,9 +7,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 150px;
-    opacity: 20%;
+    opacity: 12%;
     left: 0;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,14 +22,31 @@
 }
 .overview h1{
     font-size: 140px;
-    
+    padding: 0;
+    margin: 0;
 }
 .overview h1 p{
     font-size: 40px;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 .home img{
-    width: 900px;
-    height: 600px;
-    mix-blend-mode: color-burn;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    position: absolute;
+    opacity: 70%;
+
+}
+.home {
+    display: block;
+}
+.description{
+    font-size: 15px;
+    width: 580px;
+    margin-top: 0;
+    color: rgb(180, 180, 180);
+}
+.desccon{
+    
 }

@@ -28,6 +28,7 @@
 }
 .aboutme{
     padding: 20px;
+	padding-left: 0;
 }
 .resume{
     padding: 20px;
@@ -94,7 +95,7 @@ body {
 	opacity: 1;
 }
 
-.aboutme1 li span1 {
+.aboutme1 li span {
 	position: absolute;
 }
 
@@ -104,7 +105,7 @@ body {
 	transition: 3ms;
 	transition-delay: 2ms;
     font-size: 20px;
-
+	
 }
 .aboutme a{
     text-decoration: none;
@@ -133,7 +134,9 @@ body {
 .aboutme1 li:hover .text1 {
 	opacity: 1;
 }
-ul li {
+
+
+.resume li {
 	position: relative;
 	list-style: none;
 	width: 40px;
@@ -148,12 +151,12 @@ ul li {
 	transition: 100ms;
 }
 
-ul li:hover {
+.resume li:hover {
 	width: 120px;
 	box-shadow: 0 0 0 2px var(--bg-color);
 }
 
-ul li::before {
+.resume li::before {
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -165,15 +168,15 @@ ul li::before {
 
 }
 
-ul li:hover::before {
+.resume li:hover::before {
 	opacity: 1;
 }
 
-ul li span {
+.resume li span {
 	position: absolute;
 }
 
-ul li i {
+.resume li i {
 	color: #fff;
 	font-size: 2em;
 	transition: 3ms;
@@ -182,13 +185,13 @@ ul li i {
 
 }
 
-ul li:hover i {
+.resume li:hover i {
 	transform: scale(0);
 	color: #fff;
 	transition-delay: 0s;
 }
 
-ul li .text {
+.resume li .text {
 	color: #fff;
 	font-size: 1.5em;
 	z-index: 1;
@@ -200,7 +203,127 @@ ul li .text {
     font-family: spartan;
 }
 
-ul li:hover .text {
+.resume li:hover .text {
 	opacity: 1;
 }
 
+.contact1 ul{
+	max-width: 65px;
+	
+}
+.contact1 ul li{
+	margin: 10px;
+	list-style: none;
+	padding: 10px;
+	border-radius: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+}
+.contact1{
+	position: fixed;
+	z-index: 9;
+	right: 0;
+	top: 35%;
+	display: flex;
+	align-items: center;
+}
+.contact1 a {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.contact1 i{
+	color: #fff;
+	font-size: 23px;
+}
+
+.insta{
+	border-radius: 100%;
+	padding: 0;
+	
+}
+
+
+.contact li {
+	position: relative;
+	list-style: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 72px;
+	background: #1e1e1e;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 0 2px #fff;
+	transition: 100ms;
+}
+
+.contact li:hover {
+	width: 120px;
+	box-shadow: 0 0 0 2px var(--bg-color);
+}
+
+.contact li::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 32px;
+	background: var(--bg-color);
+	opacity: 0;
+	transition: 3ms;
+    font-family: spartan;
+
+}
+
+.contact li:hover::before {
+	opacity: 1;
+}
+
+.contact li span {
+	position: absolute;
+}
+
+.contact li i {
+	color: #fff;
+	font-size: 2em;
+	transition: 3ms;
+	transition-delay: 2ms;
+    font-size: 20px;
+
+}
+
+.contact li:hover i {
+	transform: scale(0);
+	color: #fff;
+	transition-delay: 0s;
+}
+
+.contact li .text {
+	color: #fff;
+	font-size: 1.5em;
+	z-index: 1;
+	font-weight: 400;
+	letter-spacing: 0.024em;
+	opacity: 0;
+	transition: 3ms;
+	letter-spacing: -0.125px;
+    font-family: spartan;
+}
+
+.contact li:hover .text {
+	opacity: 1;
+}
+.contact a{
+	text-decoration: none;
+	color: white;
+}
+.resume a{
+	text-decoration: none;
+	color: white;
+}
