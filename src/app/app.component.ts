@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PropertySharingService } from './property-sharing.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
- 
+  contactView:boolean
+  constructor(
+    private propShare : PropertySharingService
+  ){
+    this.contactView = propShare.contactView
+    console.log(this.contactView);
+    
+  }
 }
