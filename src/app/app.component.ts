@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PropertySharingService } from './property-sharing.service';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +9,17 @@ import { PropertySharingService } from './property-sharing.service';
 })
 export class AppComponent {
   title = 'portfolio';
-  contactView:boolean
+  contactView:boolean | undefined
   constructor(
+    private router : Router,
     private propShare : PropertySharingService
   ){
-    this.contactView = propShare.contactView
+    this.router.events.subscribe((ev) => {
+      if (ev instanceof NavigationEnd) { 
+        this.contactView = ev.url == '/contact'
+        console.log(this.contactView);    
+      }
+    });
     console.log(this.contactView);
     
   }

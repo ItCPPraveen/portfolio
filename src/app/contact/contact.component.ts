@@ -8,6 +8,7 @@ import { PropertySharingService } from '../property-sharing.service';
 })
 export class ContactComponent implements OnDestroy {
   contactView : boolean
+  gmail='cppraveen02@gmail.com'
   constructor(
     private propShare: PropertySharingService
   ) {
