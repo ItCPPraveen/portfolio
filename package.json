@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build": "ng build --output-path=dist/portfolio --base-href=https://<your-username>.github.io/<repository-name>/",
+    "postbuild": "echo > dist/portfolio/.nojekyll",
+    "deploy": "npm run build && npx angular-cli-ghpages --dir=dist/portfolio"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +26,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.0.0",
-    "@angular/cli": "~15.0.0",
+    "@angular/cli": "^15.2.11",
     "@angular/compiler-cli": "^15.0.0",
     "@types/jasmine": "~4.3.0",
     "angular-cli-ghpages": "^2.0.3",
