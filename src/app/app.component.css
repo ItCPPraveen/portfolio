@@ -73,7 +73,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	box-shadow: 0 0 0 2px #fff;
-	transition: 100ms;
+	transition: 400ms;
 }
 
 .aboutme1 li:hover {
@@ -150,7 +150,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	box-shadow: 0 0 0 2px #fff;
-	transition: 100ms;
+	transition: 400ms;
 }
 
 .resume li:hover {
@@ -263,7 +263,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	box-shadow: 0 0 0 2px #fff;
-	transition: 100ms;
+	transition: 400ms;
 }
 
 .contact li:hover {
