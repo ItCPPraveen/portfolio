@@ -1,7 +1,6 @@
 ### To Deploy
 
-Run `ng build --base-href="/porfolio/"` and `npx angular-cli-ghpages --dir=dist/portfolio`
-
+run `ng deploy --base-url="/portfolio/"`
 
 # Portfolio
 
