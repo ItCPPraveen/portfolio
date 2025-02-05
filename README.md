@@ -1,5 +1,6 @@
 ### To Deploy
 
+run `ng build --configuration production --base-href /portfolio/`
 run `ng deploy --base-href="/portfolio/"`
 
 # Portfolio
