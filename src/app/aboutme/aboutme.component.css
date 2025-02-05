@@ -1,0 +1,18 @@
+.aboutme{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+.aboutmeDesc{
+    padding: 20px;
+    font-size: 22px;
+    text-align: justify;
+}
+.aboutmeDesc span{
+    font-weight: 700;
+}
+@media screen and (max-width: 990px) {
+	.aboutme{
+		font-size: 16px;
+	}
+}

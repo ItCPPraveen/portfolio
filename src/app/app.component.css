@@ -1,6 +1,10 @@
 
 .header{
-    padding-bottom: 20px;
+    padding: 20px 0;
+    position: sticky;
+    display: block;
+    top: 0;
+    z-index: 9;
 }
 .name{
     font-family: spartan;

@@ -126,29 +126,33 @@
 }
 .contant_link{
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-size: 30px;
 }
 .contant_link p{
 	margin: 0;
+	border-bottom:1px solid transparent;
+
 }
 .contant_link p:hover{
-	border-bottom:2px solid black;
+	border-bottom:1px solid white;
 }
 .con_card{
-	backdrop-filter: invert(0.9);
-    color: #000000;
+	/* backdrop-filter: invert(0.9); */
     padding: 20px;
     transition: 400ms;
 }
 .con_card:hover{
-	box-shadow: inset 4px 3px 10px black;
-    transition: 400ms;
-	padding: 20px 30px;
+	/* box-shadow: inset 4px 3px 10px black; */
+    /* transition: 400ms; */
+	/* padding: 20px 30px; */
 }
 .link_name{
 	font-size: 24px;
 }
+/* .contact_con{
+	backdrop-filter: invert(0.31);
+} */
 @media screen and (max-width: 990px) {
 	.link_name{
 		font-size: 16px;
