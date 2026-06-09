@@ -1,46 +1,53 @@
+.header {
+	padding: 20px 0;
+	position: fixed;
+	display: block;
+	top: 0;
+	z-index: 9;
+	width: 100%;
+}
 
-.header{
-    padding: 20px 0;
-    position: sticky;
-    display: block;
-    top: 0;
-    z-index: 9;
+.name {
+	font-family: spartan;
+	position: absolute;
+	color: white;
+	left: 30px;
+	padding: 40px;
 }
-.name{
-    font-family: spartan;
-    position: absolute;
-    color: white;
-    left: 30px;
-    padding: 40px;
-}
-.name a{
-    text-decoration: none;
-    color: white;
-    font-family: spartan;
+
+.name a {
+	text-decoration: none;
+	color: white;
+	font-family: spartan;
 
 }
-.pic img{
-    height: 88px;
-    width: 86px;
-    border-radius: 100000px;
-    object-fit: cover;
+
+.pic img {
+	height: 88px;
+	width: 86px;
+	border-radius: 100000px;
+	object-fit: cover;
 }
-.pic{
-    border-radius: 50%;
-    background-color: #fff;
+
+.pic {
+	border-radius: 50%;
+	background-color: #fff;
 	border: 3px solid white;
 }
-.aboutme{
-    padding: 20px;
+
+.aboutme {
+	padding: 20px;
 	padding-left: 0;
 }
-.resume{
-    padding: 20px;
+
+.resume {
+	padding: 20px;
 }
-.headercon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.headercon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 * {
@@ -91,7 +98,7 @@ body {
 	background: var(--bg-color);
 	opacity: 0;
 	transition: 3ms;
-    font-family: spartan;
+	font-family: spartan;
 
 }
 
@@ -108,13 +115,14 @@ body {
 	font-size: 2em;
 	transition: 3ms;
 	transition-delay: 2ms;
-    font-size: 20px;
-	
+	font-size: 20px;
+
 }
-.aboutme a{
-    text-decoration: none;
-    color: white;
-    font-family: spartan;
+
+.aboutme a {
+	text-decoration: none;
+	color: white;
+	font-family: spartan;
 }
 
 .aboutme1 li:hover i {
@@ -132,7 +140,7 @@ body {
 	opacity: 0;
 	transition: 3ms;
 	letter-spacing: -0.125px;
-    font-family: spartan;
+	font-family: spartan;
 }
 
 .aboutme1 li:hover .text1 {
@@ -168,7 +176,7 @@ body {
 	background: var(--bg-color);
 	opacity: 0;
 	transition: 3ms;
-    font-family: spartan;
+	font-family: spartan;
 
 }
 
@@ -185,7 +193,7 @@ body {
 	font-size: 2em;
 	transition: 3ms;
 	transition-delay: 2ms;
-    font-size: 20px;
+	font-size: 20px;
 
 }
 
@@ -204,18 +212,19 @@ body {
 	opacity: 0;
 	transition: 3ms;
 	letter-spacing: -0.125px;
-    font-family: spartan;
+	font-family: spartan;
 }
 
 .resume li:hover .text {
 	opacity: 1;
 }
 
-.contact1 ul{
+.contact1 ul {
 	max-width: 65px;
-	
+
 }
-.contact1 ul li{
+
+.contact1 ul li {
 	margin: 10px;
 	list-style: none;
 	padding: 10px;
@@ -226,7 +235,8 @@ body {
 	cursor: pointer;
 
 }
-.contact1{
+
+.contact1 {
 	position: fixed;
 	z-index: 9;
 	right: 0;
@@ -234,22 +244,24 @@ body {
 	display: flex;
 	align-items: center;
 }
+
 .contact1 a {
-	
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
 }
-.contact1 i{
+
+.contact1 i {
 	color: #fff;
 	font-size: 23px;
 }
 
-.insta{
+.insta {
 	border-radius: 100%;
 	padding: 0;
-	
+
 }
 
 
@@ -281,7 +293,7 @@ body {
 	background: var(--bg-color);
 	opacity: 0;
 	transition: 3ms;
-    font-family: spartan;
+	font-family: spartan;
 
 }
 
@@ -298,7 +310,7 @@ body {
 	font-size: 2em;
 	transition: 3ms;
 	transition-delay: 2ms;
-    font-size: 20px;
+	font-size: 20px;
 
 }
 
@@ -317,38 +329,45 @@ body {
 	opacity: 0;
 	transition: 3ms;
 	letter-spacing: -0.125px;
-    font-family: spartan;
+	font-family: spartan;
 }
 
 .contact li:hover .text {
 	opacity: 1;
 }
-.contact a{
+
+.contact a {
 	text-decoration: none;
 	color: white;
 }
-.resume a{
+
+.resume a {
 	text-decoration: none;
 	color: white;
 }
+
 .cursor-bg {
-  position: fixed;
-  pointer-events: none;
-  width: 60px;      /* adjust size */
-  height: 60px;     /* adjust size */
-  background: radial-gradient(
-    /* circle at center, */
-    rgba(255, 255, 255, 0.5) 0%,
-    /* rgba(255, 255, 255, 0.2) 70%, */
-    transparent 100%
-  );
+	position: fixed;
+	pointer-events: none;
+	width: 60px;
+	/* adjust size */
+	height: 60px;
+	/* adjust size */
+	background: radial-gradient(
+			/* circle at center, */
+			rgba(255, 255, 255, 0.5) 0%,
+			/* rgba(255, 255, 255, 0.2) 70%, */
+			transparent 100%);
 
-  border-radius: 50%;
-  -webkit-backdrop-filter: invert(80%);
-  backdrop-filter: invert(100%);
-  transform: translate(-50%, -50%);
-  transition: background 1000s ease;
-  /* filter: blur(1px); */
-  z-index: 99;
+	border-radius: 50%;
+	-webkit-backdrop-filter: invert(80%);
+	backdrop-filter: invert(100%);
+	transform: translate(-50%, -50%);
+	transition: background 1000s ease;
+	/* filter: blur(1px); */
+	z-index: 99;
 }
 
+.outletStyles {
+	margin-top: 180px;
+}

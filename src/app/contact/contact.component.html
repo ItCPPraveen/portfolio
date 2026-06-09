@@ -23,63 +23,14 @@
     <div class="col-lg-6 col-12">
       <div class="contact_cards_wrapper">
         
-        <!-- Email Card -->
-        <a href="mailto:cppraveen02@gmail.com" class="contact_card_link">
-          <div class="contact_card d-flex align-items-center mb-4">
+        <a [href]="c.url" [target]="c.platform.toUpperCase() === 'EMAIL' || c.platform.toUpperCase() === 'PHONE' ? '_self' : '_blank'" class="contact_card_link" *ngFor="let c of contacts; let last = last">
+          <div class="contact_card d-flex align-items-center" [class.mb-4]="!last">
             <div class="icon_container d-flex align-items-center justify-content-center">
-              <i class="fa fa-envelope"></i>
+              <i class="fa {{ c.icon }}"></i>
             </div>
             <div class="info_section ml-4">
-              <h3 class="card_head">EMAIL</h3>
-              <p class="card_value">{{ gmail }}</p>
-            </div>
-            <div class="arrow_container ml-auto">
-              <i class="fa fa-chevron-right"></i>
-            </div>
-          </div>
-        </a>
-
-        <!-- GitHub Card -->
-        <a href="https://github.com/ItCPPraveen" target="_blank" class="contact_card_link">
-          <div class="contact_card d-flex align-items-center mb-4">
-            <div class="icon_container d-flex align-items-center justify-content-center">
-              <i class="fa fa-github"></i>
-            </div>
-            <div class="info_section ml-4">
-              <h3 class="card_head">GITHUB</h3>
-              <p class="card_value">ItCPPraveen</p>
-            </div>
-            <div class="arrow_container ml-auto">
-              <i class="fa fa-chevron-right"></i>
-            </div>
-          </div>
-        </a>
-
-        <!-- LinkedIn Card -->
-        <a href="https://www.linkedin.com/in/cp-praveen-84218b190" target="_blank" class="contact_card_link">
-          <div class="contact_card d-flex align-items-center mb-4">
-            <div class="icon_container d-flex align-items-center justify-content-center">
-              <i class="fa fa-linkedin"></i>
-            </div>
-            <div class="info_section ml-4">
-              <h3 class="card_head">LINKEDIN</h3>
-              <p class="card_value">Cp Praveen</p>
-            </div>
-            <div class="arrow_container ml-auto">
-              <i class="fa fa-chevron-right"></i>
-            </div>
-          </div>
-        </a>
-
-        <!-- Phone Card -->
-        <a href="tel:+917092434298" class="contact_card_link">
-          <div class="contact_card d-flex align-items-center">
-            <div class="icon_container d-flex align-items-center justify-content-center">
-              <i class="fa fa-phone"></i>
-            </div>
-            <div class="info_section ml-4">
-              <h3 class="card_head">PHONE</h3>
-              <p class="card_value">+91 70924 34298</p>
+              <h3 class="card_head">{{ c.platform.toUpperCase() }}</h3>
+              <p class="card_value">{{ c.value }}</p>
             </div>
             <div class="arrow_container ml-auto">
               <i class="fa fa-chevron-right"></i>
