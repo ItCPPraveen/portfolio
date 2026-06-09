@@ -331,3 +331,24 @@ body {
 	text-decoration: none;
 	color: white;
 }
+.cursor-bg {
+  position: fixed;
+  pointer-events: none;
+  width: 60px;      /* adjust size */
+  height: 60px;     /* adjust size */
+  background: radial-gradient(
+    /* circle at center, */
+    rgba(255, 255, 255, 0.5) 0%,
+    /* rgba(255, 255, 255, 0.2) 70%, */
+    transparent 100%
+  );
+
+  border-radius: 50%;
+  -webkit-backdrop-filter: invert(80%);
+  backdrop-filter: invert(100%);
+  transform: translate(-50%, -50%);
+  transition: background 1000s ease;
+  /* filter: blur(1px); */
+  z-index: 99;
+}
+

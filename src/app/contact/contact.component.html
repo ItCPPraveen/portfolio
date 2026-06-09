@@ -8,53 +8,86 @@
         </ul>
     </div>
 </div> -->
-<div class="container">
-  <div class="d-flex flex-wrap justify-content-center align-items-center contact_con">
-    <div class="col-md-5 col-12 p-3">
-      <h1 class="hello text-md-right text-center">
-        SAY HELLO
-      </h1>
+<div class="container py-5 my-md-5">
+  <div class="row align-items-center justify-content-between contact_row">
+    <!-- Left Column: Intro Message -->
+    <div class="col-lg-5 col-12 mb-5 mb-lg-0 text-center text-lg-left">
+      <span class="contact_label">GET IN TOUCH</span>
+      <h1 class="contact_title mt-2 mb-4">SAY HELLO</h1>
+      <p class="contact_intro">
+        I'm always open to new opportunities, collaborations, or just connecting. Whether you want to discuss a project, have a question, or simply want to chat about frontend development, feel free to reach out through any of these channels!
+      </p>
     </div>
-    <div class="col-md-5 col-12 p-3 links_con position-relative">
-      <div class="mb-5 con_card">
-        <h3 class="contact_head">
-          EMAIL
-        </h3>
-        <a class="contant_link" href="mailto:cppraveen02@gmail.com">
-          <div class="d-flex align-items-center my-2 link_name">
-            <i class="fa fa-envelope"></i>
-            <p class="mx-4">
-              {{gmail}}
-            </p>
+
+    <!-- Right Column: Glassmorphic Contact Cards -->
+    <div class="col-lg-6 col-12">
+      <div class="contact_cards_wrapper">
+        
+        <!-- Email Card -->
+        <a href="mailto:cppraveen02@gmail.com" class="contact_card_link">
+          <div class="contact_card d-flex align-items-center mb-4">
+            <div class="icon_container d-flex align-items-center justify-content-center">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="info_section ml-4">
+              <h3 class="card_head">EMAIL</h3>
+              <p class="card_value">{{ gmail }}</p>
+            </div>
+            <div class="arrow_container ml-auto">
+              <i class="fa fa-chevron-right"></i>
+            </div>
           </div>
         </a>
-      </div>
-      <div class="mb-5 con_card">
-        <h3 class="contact_head">
-          GITHUB
-        </h3>
-        <a class="contant_link" href="https://github.com/ItCPPraveen">
-          <div class="d-flex align-items-center my-2 link_name">
-            <i class="fa fa-github"></i>
-            <p class="mx-4">
-              ItCPPraveen
-            </p>
+
+        <!-- GitHub Card -->
+        <a href="https://github.com/ItCPPraveen" target="_blank" class="contact_card_link">
+          <div class="contact_card d-flex align-items-center mb-4">
+            <div class="icon_container d-flex align-items-center justify-content-center">
+              <i class="fa fa-github"></i>
+            </div>
+            <div class="info_section ml-4">
+              <h3 class="card_head">GITHUB</h3>
+              <p class="card_value">ItCPPraveen</p>
+            </div>
+            <div class="arrow_container ml-auto">
+              <i class="fa fa-chevron-right"></i>
+            </div>
           </div>
         </a>
-      </div>
-      <div class="mb-5 con_card">
-        <h3 class="contact_head">
-          LINKEDIN
-        </h3>
-        <a class="contant_link" href="https://www.linkedin.com/in/cp-praveen-84218b190">
-          <div class="d-flex align-items-center my-2 link_name">
-            <i class="fa fa-linkedin"></i>
-            <p class="mx-4">
-              Cp Praveen
-            </p>
+
+        <!-- LinkedIn Card -->
+        <a href="https://www.linkedin.com/in/cp-praveen-84218b190" target="_blank" class="contact_card_link">
+          <div class="contact_card d-flex align-items-center mb-4">
+            <div class="icon_container d-flex align-items-center justify-content-center">
+              <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="info_section ml-4">
+              <h3 class="card_head">LINKEDIN</h3>
+              <p class="card_value">Cp Praveen</p>
+            </div>
+            <div class="arrow_container ml-auto">
+              <i class="fa fa-chevron-right"></i>
+            </div>
           </div>
         </a>
+
+        <!-- Phone Card -->
+        <a href="tel:+917092434298" class="contact_card_link">
+          <div class="contact_card d-flex align-items-center">
+            <div class="icon_container d-flex align-items-center justify-content-center">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="info_section ml-4">
+              <h3 class="card_head">PHONE</h3>
+              <p class="card_value">+91 70924 34298</p>
+            </div>
+            <div class="arrow_container ml-auto">
+              <i class="fa fa-chevron-right"></i>
+            </div>
+          </div>
+        </a>
+
       </div>
     </div>
   </div>
-</div>
+</div>
